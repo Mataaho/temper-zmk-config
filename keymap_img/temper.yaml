@@ -1,259 +1,263 @@
 layout: {zmk_keyboard: temper}
 layers:
-  default:
-  - - B
-    - L
-    - D
-    - C
-    - V
-    - J
-    - F
-    - O
-    - U
-    - {t: ',', s: <}
-  - [N, R, T, S, G, Y, H, A, E, I]
-  - - X
-    - Q
-    - M
+  alpha:
+  - - Q
     - W
+    - F
+    - P
+    - B
+    - J
+    - L
+    - U
+    - Y
+    - {t: ';', s: ':'}
+  - [A, R, S, T, G, M, N, E, I, O]
+  - - X
+    - C
+    - D
+    - V
     - Z
     - K
-    - P
-    - {t: '''', s: '"'}
-    - {t: ;, s: ':'}
+    - H 
+    - {t: ',', s: '<'}
     - {t: ., s: '>'}
-  - - symbol
-    - nav
-    - SPACE
-    - {t: RSHIFT, h: sticky}
-    - num
-    - fun
-  qwerty:
-  - [Q, W, E, R, T, Y, U, I, O, P]
-  - - A
-    - S
-    - D
-    - F
-    - G
-    - H
-    - J
-    - K
-    - L
-    - {t: ;, s: ':'}
-  - - Z
-    - X
-    - C
-    - V
-    - B
-    - N
-    - M
-    - {t: ',', s: <}
-    - {t: ., s: '>'}
-    - \
-  - - symbol
-    - nav
-    - SPACE
-    - {t: RSHIFT, h: sticky}
-    - num
-    - fun
-  symbol:
-  - ['~', <, '[', (, '{', '}', ), ']', '>', '"']
-  - - '!'
-    - '@'
-    - '#'
-    - $
-    - '%'
-    - ^
-    - '&'
-    - '*'
-    - {t: '-', s: _}
-    - {t: '''', s: '"'}
-  - - {t: '`', s: '~'}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - /
-    - {t: ▽, type: trans}
-    - '?'
-    - \
-    - ⌃
-    - _
-    - '|'
-  - - {t: ESC, type: held}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  num:
-  - - /
-    - '7'
-    - '8'
-    - '9'
-    - {t: '-', s: _}
-    - {t: ▽, type: trans}
-    - BSPC
-    - {t: ▽, type: trans}
-    - DEL
-    - {t: ▽, type: trans}
+    - {t: /, s: '?'}
+  - - {t: CTRL, h: ESC}
+    - {t: TAB, h: LSHIFT}
+    - {t: SPACE, h: 1}
+    - {t: ENTER, h: 2}
+    - {t: BKSP, h: LALT}
+    - {t: LGUI, h: DEL}
+  symnum:
+  - ['=', '7', '8', '9', '0', {t: ▽, type: trans}, '(', ')', '-', ';']
   - - '*'
     - '4'
     - '5'
     - '6'
-    - +
-    - {t: ▽, type: trans}
-    - ⇧
-    - ⌃
-    - ⌘
-    - ⎇
-  - - {t: ., s: '>'}
+    - '+'
+    - HOME
+    - RSHIFT
+    - '`'
+    - '\'
+    - END
+  - - '/'
     - '1'
     - '2'
     - '3'
-    - {t: '=', s: +}
+    - '-'
+    - {t: ▽, type: trans}
+    - '['
+    - ']'
+    - '''
+    - {t: ▽, type: trans}
+  - - GUI
+    - LSHIFT
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - '0'
-    - SPACE
-    - {t: ▽, type: trans}
-    - {type: held}
-    - {t: ▽, type: trans}
+    - RCTRL
+    - RGUI
   nav:
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - '&msc SCRL_UP'
-    - PAGE UP
-    - HOME
-    - {t: ▽, type: trans}
-  - - {t: ⎇, h: sticky}
-    - {t: ⌘, h: sticky}
-    - {t: ⌃, h: sticky}
-    - {t: ⇧, h: sticky}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - ←
-    - ↑
-    - ↓
-    - →
-  - - ⎇
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - '&msc SCRL_DOWN'
-    - PAGE DOWN
-    - END
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {type: held}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  fun:
-  - - {t: ▽, type: trans}
-    - F7
-    - F8
-    - F9
-    - F12
-    - {t: ▽, type: trans}
+  - [LCTRL, LGUI, LALT, LSHIFT, {t: ▽, type: trans}, &msc SCRL_RIGHT, &msc SCRL_LEFT, &kp PP, &kp STOP, {t: ▽, type: trans}]
+  - - Bright up
+    - Vol+
     - MUTE
-    - VOL DN
-    - VOL UP
+    - BKSP
+    - DEL
+    - PAGE UP
+    - LEFT
+    - RIGHT
+    - UP
+    - DOWN
+  - - Bright DN
+    - Vol-
     - {t: ▽, type: trans}
+    - &mkp MB1 
+    - &mkp MB2 
+    - PAGE DOWN
+    - &mmv LEFT 
+    - &mmv RIGHT
+    - &mmv UP
+    - &mmv DOWN
   - - {t: ▽, type: trans}
-    - F4
-    - F5
-    - F6
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  func:
+  - - LCTRL
+    - LGUI
+    - LALT
+    - LSHIFT
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - F7 
+    - F8 
+    - F9 
+    - F12
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - F4 
+    - F5 
+    - F6 
     - F11
-    - {t: BT, h: '0'}
-    - {t: BT, h: '1'}
-    - {t: BT, h: '2'}
-    - {t: BT, h: '3'}
-    - {t: BT, h: '4'}
-  - - {t: ▽, type: trans}
-    - F1
-    - F2
-    - F3
-    - F10
+  - - BT0
+    - BT1
+    - BT2
+    - BT3
+    - BT4
     - {t: ▽, type: trans}
-    - PREV
-    - PP
-    - NEXT
-    - BT CLR
+    - F1 
+    - F2 
+    - F3 
+    - F10 
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
+    - USB OUT
+    - BT OUT 
+    - BT CLEAR
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {type: held}
-  cmd:
-  - - ⌘Q
-    - ⌘W
-    - F
-    - Gui+P
-    - B
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - ⇧
-    - ⌃
-    - ⎇
-    - ⌘
-    - Gui+G
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - ⌘Z
-    - ⌘X
-    - ⌘C
-    - D
-    - ⌘V
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-combos:
-- p: [1, 2]
-  k: ESC
-- p: [6, 7]
-  k: BSPC
-- p: [7, 8]
-  k: DEL
-- p: [21, 22]
-  k: ↹
-- p: [27, 28]
-  k: RET
-- p: [11, 12]
-  k: ⇪
-- p: [1, 2, 3]
-  k: {t: num, h: toggle}
-- p: [6, 7, 8]
-  k: {t: qwerty, h: toggle}
-- p: [3, 4]
-  k: Meh+⌘
-- p: [5, 6]
-  k: Meh+⌘
-- p: [23, 24]
-  k: Sft+Alt+LGUI)
-- p: [25, 26]
-  k: Sft+Alt+LGUI)
+    - {t: ▽, type: trans} 
+    - {t: ▽, type: trans} 
+    - {t: ▽, type: trans} 
+    - {t: ▽, type: trans} 
+#   nav:
+#   - - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#     - '&msc SCRL_UP'
+#     - PAGE UP
+#     - HOME
+#     - {t: ▽, type: trans}
+#   - - {t: ⎇, h: sticky}
+#     - {t: ⌘, h: sticky}
+#     - {t: ⌃, h: sticky}
+#     - {t: ⇧, h: sticky}
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#     - ←
+#     - ↑
+#     - ↓
+#     - →
+#   - - ⎇
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#     - '&msc SCRL_DOWN'
+#     - PAGE DOWN
+#     - END
+#     - {t: ▽, type: trans}
+#   - - {t: ▽, type: trans}
+#     - {type: held}
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#   fun:
+#   - - {t: ▽, type: trans}
+#     - F7
+#     - F8
+#     - F9
+#     - F12
+#     - {t: ▽, type: trans}
+#     - MUTE
+#     - VOL DN
+#     - VOL UP
+#     - {t: ▽, type: trans}
+#   - - {t: ▽, type: trans}
+#     - F4
+#     - F5
+#     - F6
+#     - F11
+#     - {t: BT, h: '0'}
+#     - {t: BT, h: '1'}
+#     - {t: BT, h: '2'}
+#     - {t: BT, h: '3'}
+#     - {t: BT, h: '4'}
+#   - - {t: ▽, type: trans}
+#     - F1
+#     - F2
+#     - F3
+#     - F10
+#     - {t: ▽, type: trans}
+#     - PREV
+#     - PP
+#     - NEXT
+#     - BT CLR
+#   - - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#     - {type: held}
+#   cmd:
+#   - - ⌘Q
+#     - ⌘W
+#     - F
+#     - Gui+P
+#     - B
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#   - - ⇧
+#     - ⌃
+#     - ⎇
+#     - ⌘
+#     - Gui+G
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#   - - ⌘Z
+#     - ⌘X
+#     - ⌘C
+#     - D
+#     - ⌘V
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#   - - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+#     - {t: ▽, type: trans}
+# combos:
+# - p: [1, 2]
+#   k: ESC
+# - p: [6, 7]
+#   k: BSPC
+# - p: [7, 8]
+#   k: DEL
+# - p: [21, 22]
+#   k: ↹
+# - p: [27, 28]
+#   k: RET
+# - p: [11, 12]
+#   k: ⇪
+# - p: [1, 2, 3]
+#   k: {t: num, h: toggle}
+# - p: [6, 7, 8]
+#   k: {t: qwerty, h: toggle}
+# - p: [3, 4]
+#   k: Meh+⌘
+# - p: [5, 6]
+#   k: Meh+⌘
+# - p: [23, 24]
+#   k: Sft+Alt+LGUI)
+# - p: [25, 26]
+#   k: Sft+Alt+LGUI)
