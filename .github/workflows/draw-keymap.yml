@@ -22,3 +22,31 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
+      - name: Install keymap-drawer
+        run: |
+          python -m pip install --upgrade pip
+          pip install keymap-drawer
+
+      - name: Draw Temper keymap
+        run: |
+          keymap draw keymap_img/temper.yaml -o keymap_img/temper.svg
+
+      - name: Show generated file
+        run: |
+          ls -lh keymap_img/temper.svg
+          git status --short
+
+      - name: Commit updated SVG
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add keymap_img/temper.svg
+
+          if git diff --cached --quiet; then
+            echo "temper.svg is already up to date."
+          else
+            git commit -m "Update Temper keymap diagram"
+            git push
+          fi
