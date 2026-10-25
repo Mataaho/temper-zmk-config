@@ -57,7 +57,7 @@ layers:
     - RCTRL
     - RGUI
   nav:
-  - [LCTRL, LGUI, LALT, LSHIFT, {t: ▽, type: trans}, &msc SCRL_RIGHT, &msc SCRL_LEFT, &kp PP, &kp STOP, {t: ▽, type: trans}]
+    - [LCTRL, LGUI, LALT, LSHIFT, {t: ▽, type: trans}, "Scroll →", "Scroll ←", Play/Pause, Stop, {t: ▽, type: trans}]
   - - Bright up
     - Vol+
     - MUTE
@@ -68,16 +68,16 @@ layers:
     - RIGHT
     - UP
     - DOWN
-  - - Bright DN
+ - - Bright DN
     - Vol-
     - {t: ▽, type: trans}
-    - &mkp MB1 
-    - &mkp MB2 
+    - Left Click
+    - Right Click
     - PAGE DOWN
-    - &mmv LEFT 
-    - &mmv RIGHT
-    - &mmv UP
-    - &mmv DOWN
+    - Mouse ←
+    - Mouse →
+    - Mouse ↑
+    - Mouse ↓
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
