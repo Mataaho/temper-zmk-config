@@ -1,4 +1,5 @@
-layout: {zmk_keyboard: temper}
+layout:
+  qmk_keyboard: obosob/arch_36
 layers:
   alpha:
   - - Q
