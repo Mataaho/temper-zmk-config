@@ -58,32 +58,32 @@ layers:
     - RGUI
   nav:
     - [LCTRL, LGUI, LALT, LSHIFT, {t: ▽, type: trans}, "Scroll →", "Scroll ←", Play/Pause, Stop, {t: ▽, type: trans}]
-  - - Bright up
-    - Vol+
-    - MUTE
-    - BKSP
-    - DEL
-    - PAGE UP
-    - LEFT
-    - RIGHT
-    - UP
-    - DOWN
- - - Bright DN
-    - Vol-
-    - {t: ▽, type: trans}
-    - Left Click
-    - Right Click
-    - PAGE DOWN
-    - Mouse ←
-    - Mouse →
-    - Mouse ↑
-    - Mouse ↓
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - - Bright up
+      - Vol+
+      - MUTE
+      - BKSP
+      - DEL
+      - PAGE UP
+      - LEFT
+      - RIGHT
+      - UP
+      - DOWN
+    - - Bright DN
+      - Vol-
+      - {t: ▽, type: trans}
+      - Left Click
+      - Right Click
+      - PAGE DOWN
+      - Mouse Left
+      - Mouse Right
+      - Mouse Up
+      - Mouse Down
+    - - {t: ▽, type: trans}
+      - {t: ▽, type: trans}
+      - {t: ▽, type: trans}
+      - {t: ▽, type: trans}
+      - {t: ▽, type: trans}
+      - {t: ▽, type: trans}
   func:
   - - LCTRL
     - LGUI
