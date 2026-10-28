@@ -36,11 +36,11 @@ layers:
     - '5'
     - '6'
     - '+'
-    - HOME
+    - {t: ▽, type: trans}
     - RSHIFT
     - '`'
     - '\'
-    - END
+    - GRAVE
   - - '/'
     - '1'
     - '2'
@@ -58,7 +58,7 @@ layers:
     - RCTRL
     - RGUI
   nav:
-    - [LCTRL, LGUI, LALT, LSHIFT, {t: ▽, type: trans}, "Scroll →", "Scroll ←", Play/Pause, Stop, {t: ▽, type: trans}]
+    - [LCTRL, LGUI, LALT, LSHIFT, HOME, "Scroll →", "Scroll ←", Play/Pause, Stop, END]
     - - Bright up
       - Vol+
       - MUTE
