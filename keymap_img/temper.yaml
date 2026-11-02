@@ -80,8 +80,8 @@ layers:
       - Mouse Up
       - Mouse Down
     - - {t: ▽, type: trans}
-      - {t: ▽, type: trans}
-      - {t: ▽, type: trans}
+      - TAB
+      - FUNC
       - {t: ▽, type: trans}
       - {t: ▽, type: trans}
       - {t: ▽, type: trans}
